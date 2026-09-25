@@ -1,10 +1,2 @@
 # Plaintext beta invite codes live here — never commit them.
 _private/
-
-# Local mirrors of installer binaries.
-assets/*.exe
-assets/*.msi
-assets/*.dmg
-assets/*.deb
-assets/*.tar.gz
-assets/*.sig

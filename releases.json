@@ -1,4 +1,40 @@
-{
-  "version": "0.4.0",
-  "downloads": []
+﻿{
+    "version":  "0.4.0",
+    "downloads":  [
+                      {
+                          "name":  "Intelligent.Explorer.app.tar.gz",
+                          "platform":  "macOS (Apple Silicon)",
+                          "desc":  "Updater bundle",
+                          "size":  5300233,
+                          "url":  "assets/Intelligent.Explorer.app.tar.gz"
+                      },
+                      {
+                          "name":  "Intelligent.Explorer_0.4.0_aarch64.dmg",
+                          "platform":  "macOS (Apple Silicon)",
+                          "desc":  "Disk image",
+                          "size":  5186794,
+                          "url":  "assets/Intelligent.Explorer_0.4.0_aarch64.dmg"
+                      },
+                      {
+                          "name":  "Intelligent.Explorer_0.4.0_amd64.deb",
+                          "platform":  "Linux",
+                          "desc":  "Package (deb)",
+                          "size":  5844548,
+                          "url":  "assets/Intelligent.Explorer_0.4.0_amd64.deb"
+                      },
+                      {
+                          "name":  "Intelligent.Explorer_0.4.0_x64-setup.exe",
+                          "platform":  "Windows",
+                          "desc":  "Installer (EXE)",
+                          "size":  4314446,
+                          "url":  "assets/Intelligent.Explorer_0.4.0_x64-setup.exe"
+                      },
+                      {
+                          "name":  "Intelligent.Explorer_0.4.0_x64_en-US.msi",
+                          "platform":  "Windows",
+                          "desc":  "Installer (MSI)",
+                          "size":  5959680,
+                          "url":  "assets/Intelligent.Explorer_0.4.0_x64_en-US.msi"
+                      }
+                  ]
 }
