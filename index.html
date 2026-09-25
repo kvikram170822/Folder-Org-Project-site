@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Intelligent Explorer — Private Beta</title>
+  <meta name="description" content="Intelligent Explorer brings order to your files and folders. Private beta — enter your invite code to download." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top">
+        <svg class="brand-mark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="3" y="3" width="7" height="7" rx="1.5" />
+          <rect x="14" y="3" width="7" height="7" rx="1.5" />
+          <rect x="3" y="14" width="7" height="7" rx="1.5" />
+          <path d="M14 14h3v3h3v3h-3v-3h-3z" />
+        </svg>
+        <span>Intelligent Explorer</span>
+      </a>
+      <nav class="topnav" aria-label="Primary">
+        <a href="#gate">Download</a>
+        <a href="#features">Features</a>
+        <a href="#trial">Evaluation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Private Beta</p>
+        <h1>Your files and folders,<br />finally organized.</h1>
+        <p class="lede">
+          Intelligent Explorer scans, classifies, and cleans your folders for you —
+          bills, tax returns, deeds, receipts, and everything in between. Free 28-day
+          evaluation. No email sign-up, no account.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#gate">Get the download</a>
+          <a class="btn btn-ghost" href="#features">See what it does</a>
+        </div>
+        <p class="platforms">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          Windows · macOS (Apple Silicon) · Linux
+        </p>
+      </div>
+    </section>
+
+    <section id="gate" class="section gate">
+      <div class="wrap gate-inner">
+        <h2>Enter your invite code</h2>
+        <p>Codes look like <code>IE-XXXX-XXXX</code>. They’re single-use per person — you don’t need
+          an email. New codes are issued periodically, so pins friends share keep working.</p>
+        <form id="gateForm" class="gate-form" novalidate>
+          <label class="sr-only" for="code">Invite code</label>
+          <input id="code" name="code" type="text" inputmode="text" autocomplete="off"
+                 spellcheck="false" placeholder="IE-XXXX-XXXX"
+                 aria-describedby="codeHelp" required />
+          <button class="btn btn-primary" type="submit">Unlock downloads</button>
+        </form>
+        <p id="codeHelp" class="form-note">Codes are checked locally — no data leaves this page.</p>
+        <div id="gateError" class="gate-error" hidden role="alert"></div>
+        <div id="gateSuccess" class="gate-success" hidden>
+          <h3>Welcome to the beta</h3>
+          <p class="gate-success-note">Your invite code is valid. Pick your platform below.
+            The app itself is private — these installers are the only public copies.</p>
+          <ul class="downloads" id="downloadList"></ul>
+          <p class="form-note">Latest release: <span id="relVersion">…</span></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section features">
+      <div class="wrap">
+        <h2>What it does</h2>
+        <div class="grid">
+          <article class="card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+            <h3>Find anything, fast</h3>
+            <p>Full-text search over file <em>bodies</em> — search inside PDFs, docs, and notes,
+              not just filenames.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+            <h3>Auto-organize</h3>
+            <p>Semantic filing proposals for Downloads and your music library, with one-click
+              apply and full undo.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l7 4v6c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg>
+            <h3>Never lose a document</h3>
+            <p>Expiry alerts, near-duplicate detection, completeness audits, and a trash that
+              restores anything.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3v18M5 8l14 8M19 8l-14 8"/></svg>
+            <h3>Subjects &amp; Grand Briefs</h3>
+            <p>Group related files into subjects and generate citation-backed briefs grounded
+              in your documents.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <h3>Works on your machine</h3>
+            <p>Indexes run locally. Nothing is uploaded — AI features use an optional
+              bring-your-own provider.</p>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 8h16M4 16h16"/><path d="M9 12h6"/></svg>
+            <h3>Capture &amp; diary</h3>
+            <p>Webcam capture with OCR, a per-vault diary, and an incoming-documents tray for
+              whatever lands in Downloads.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="trial" class="section trial">
+      <div class="wrap trial-inner">
+        <h2>How the free evaluation works</h2>
+        <ol class="steps">
+          <li>
+            <span class="step-num">14</span>
+            <div><h3>Days of full access</h3><p>Every feature unlocked from the moment you first launch.</p></div>
+          </li>
+          <li>
+            <span class="step-num">+14</span>
+            <div><h3>One tap to extend</h3><p>Ask the app for one extra 14 days while you’re still in the window.</p></div>
+          </li>
+          <li>
+            <span class="step-num">28</span>
+            <div><h3>Hard cap</h3><p>At day 28 the app becomes a read-only archive — your data is safe, and
+              new scans/changes pause.</p></div>
+          </li>
+        </ol>
+        <p class="form-note">No payment, no expiry tracking on any server — the clock lives on your machine.</p>
+      </div>
+    </section>
+
+    <section id="faq" class="section faq">
+      <div class="wrap">
+        <h2>Questions</h2>
+        <details>
+          <summary>Is my data uploaded anywhere?</summary>
+          <p>No. Indexing, extraction, and organization all run locally. Optional AI features
+            call a provider you configure in Settings — nothing is sent automatically.</p>
+        </details>
+        <details>
+          <summary>What happens after the 28 days?</summary>
+          <p>The app enters read-only mode: browse, search, and export keep working; creating,
+            scanning, renaming, and organizing pause. Activating a Pro license key (when
+            available) restores full use.</p>
+        </details>
+        <details>
+          <summary>Do I need an account?</summary>
+          <p>No. Just an invite code you were given. There’s no email sign-up and no lock-in.</p>
+        </details>
+        <details>
+          <summary>When will new invite codes be issued?</summary>
+          <p>Periodically, as we grow the beta. The page only needs to be refreshed — new codes
+            validate instantly.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-inner">
+      <span>© 2026 Intelligent Explorer</span>
+      <span class="footer-muted">Private beta · invite only · local-first</span>
+    </div>
+  </footer>
+
+  <script src="codes.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
